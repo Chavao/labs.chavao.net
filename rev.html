@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
         <title>Reverse</title>
         <script type='text/javascript'>
-                function reverse(){
-                        el = document.getElementById("foobar");
-                        s = el.value;
-                    s = s.split("").reverse().join("");
-                    el.value = s;
-                }
+            function reverse(){
+                el = document.getElementById("foobar");
+                s = el.value;
+                s = s.split("").reverse().join("");
+                el.value = s;
+            }
         </script>
         <style type='text/css'>
-        #foobar {
+            #foobar {
                 width: 500px;
                 height: 500px;
                 border: solid 1px #F00
-        }
+            }
         </style>
-</head>
-<body>
-<form>
-<textarea id="foobar"></textarea>
-<input type="button" value="Inverter" onclick="reverse();">
-</form>
-</body>
+    </head>
+    <body>
+        <form>
+            <textarea id="foobar"></textarea>
+            <input type="button" value="Inverter" onclick="reverse();">
+        </form>
+    </body>
 </html>
