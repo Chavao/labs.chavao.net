@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <title>Weight ratio - Calculator</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript">
+        jQuery(function($) {
+            jQuery("#squat").on("keyup", function(e) {
+                console.log("oi");
+                squat = jQuery(this).val();
+                console.log(squat);
+
+                jQuery("#snatch").val((squat/100*66).toFixed(0));
+                jQuery("#cej").val((squat/100*84).toFixed(0));
+            });
+        });
+        </script>
+    </head>
+    <body>
+    <h1>Weight ratio</h1>
+    Squat <input type="text" id="squat" />
+    Snatch <input type="text" disabled="disabled" id="snatch" />
+    Clean & Jerk <input type="text" disabled="disabled" id="cej" />
+    </body>
+</html>
+
