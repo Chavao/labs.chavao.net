@@ -7,9 +7,7 @@
         <script type="text/javascript">
         jQuery(function($) {
             jQuery("#squat").on("keyup", function(e) {
-                console.log("oi");
                 squat = jQuery(this).val();
-                console.log(squat);
 
                 jQuery("#snatch").val((squat/100*66).toFixed(0));
                 jQuery("#cej").val((squat/100*84).toFixed(0));
